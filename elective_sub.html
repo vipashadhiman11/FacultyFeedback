@@ -1,0 +1,141 @@
+
+<html>
+<head>
+<title>
+</title>
+
+<style>
+body {font-family: Times New Roman;}
+* {box-sizing: border-box}
+
+h1{
+
+ color: #006600 !important;
+ font-family: Times New Roman !important;
+ font-weight: bold !important;
+ 
+ }
+ 
+small.sub-1{
+ color: #000000;
+ font-family: Times New Roman;
+ font-weight: bold;		
+ }
+
+small.sub-2{
+ color: #006600;
+ font-family: Times New Roman;
+ font-weight: bold;	
+ }	
+
+
+ 
+input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus{
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity:1;
+}
+
+
+/* Float cancel and signup buttons and add an equal width */
+.submitbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .submitbtn {
+       width: 100%;
+    }
+}
+
+</style>
+
+
+</head>
+<header>
+<title>Registeration Page</title>
+  <meta charset="utf-8"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+<header class="container">
+<div class="col-sm-4">
+  <img class="img-responsive" src="\IGDTUW-Logo.jpg" class="img-rounded" alt="IGDTUW" width="200" height="200"> 
+
+</div>
+
+<div class="col-sm-8">
+  <h1 class="text-center">INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN</h1>
+  <h2 class="text-center"><small class="sub-1">(Established by Government of Delhivide Act of 2012)</small></h2>
+  <h2 class="text-center"><small class="sub-2">(<i>Formerly</i> Indira Gandhi Institue of Technology)</small></h2>
+</header>
+
+
+
+<body>
+<form  method="post" action="register2.php" >
+   <div class="container"> 
+   <hr>
+   <br>
+   <label><b>Elective Subject Name</b></label>
+   <input type="text" placeholder="Sub Name" name="sub_name">
+ 
+	<label><b>Elective Subject Code</b></label>
+	<input type="text" placeholder="Subject Code" name="sub_code">
+ 
+    <label><b>Elective Subject Teacher's Name</b></label>  
+	<input type="text" placeholder="Teacher Name" name="teacher_name">
+ 
+   
+  
+    <br><br>
+	<button type="submit" class="submit">Submit</button>
+	</div>
+  
+  </form>
+</body>
+</html>

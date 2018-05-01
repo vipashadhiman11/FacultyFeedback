@@ -1,0 +1,90 @@
+<html>
+<head>
+<title>Faculty Feedback System</title>
+  <meta charset="utf-8"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<style>
+h2{
+padding:250px,400px,150px,400px;
+font-size:40px;
+color:blue;
+}
+.div{
+color:black;
+font-size:28px;
+}
+</style>
+<body>
+
+<header class="container">
+<div class="col-sm-4">
+  <img class="img-responsive" src="/igdtuw.png" class="img-rounded" alt="Cinque Terre" width="250" height="200"> 
+
+</div>
+
+<div class="col-sm-8">
+  <h1 class="text-center">Indira Gandhi Delhi Technical University For Women</h1>
+  <h3 class="text-center"><small>(Established by Government of Delhivide Act of 2012)</small></h3>
+  <h3 class="text-center"><small>(Formerly Indira Gandhi Institue of Technology)</small></h3>
+</header>
+<br>
+
+<div class="container">
+<div class="row">
+
+<div class="col-sm-8">
+<div class="container">
+<div class="col-sm-7">
+
+
+
+ <form  method="post" action="timetable1.php" > 
+
+
+ <fieldset>
+    <legend>Academic information:</legend>
+  Programme:<br>
+  <input type="text" name="programme">
+  <br>
+  course:<br>
+  <input type="text" name="course">
+  <br>
+  semester:<br>
+ <select name="semester">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+  </select>
+  <br>
+  Year:<br>
+  <select name="Year">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>
+  <br>
+  Subject:<br>
+  <input type="text" name="subject">
+  <br>
+  Subject Code:<br>
+  <input type="text" name="subjectcode">
+  <br>
+  Faculty Id:<br>
+  <input type="text" name="facultyid">
+  <br><br>
+  <input type="submit" value="Submit">
+  <input type="reset">
+  </fieldset>
+</form>
+
+
+</body>
+</html>
+

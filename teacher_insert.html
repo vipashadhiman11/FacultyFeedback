@@ -1,0 +1,212 @@
+ <!DOCTYPE html>
+<html>
+<head>
+
+<title>Teacher Insert</title>
+ <meta charset="utf-8"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<style>
+
+ol, ul {
+  list-style: none;
+}
+body {
+  background: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+   line-height: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.signup {
+  width: 300px;
+  margin: 60px auto;
+  font-size: 12px;
+}
+
+.signup-item {
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.signup-input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-left: 5px;
+  background: #ffffff;
+  border: none;
+   border-radius: 4px;
+  color: #787676;
+  box-shadow: inset 0 1px 5px 0 #2c3746, 0 1px 0 #3a4556;
+}
+.signup-input::-moz-placeholder {
+  color: #768A9D;
+}
+.signup-input:focus ~ .signup-label:before {
+  opacity: 1;
+  -webkit-transition: opacity .2s;
+          transition: opacity .2s;
+}
+
+.signup-label {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  color: #989797;
+}
+.signup-label:before {
+  content: '\25b8';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: -30px;
+  color: #09500c;
+  opacity: 0;
+}
+
+.signup-select {
+  padding-left: 80px;
+  position: relative;
+  z-index: 5;
+  background: #374356;
+  border-radius: 5px;
+  color: #989797;
+  box-shadow: 0 -1px 0 #3a4556, 0 1px 3px #2c3746;
+  overflow: hidden;
+}
+.signup-select:after {
+  content: '\25be';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  color: #2c3746;
+}
+.signup-select:hover, .signup-select:hover::after {
+  color: #E9E5E3;
+  cursor: pointer;
+}
+.signup-select:hover .signup-select-menu {
+  max-height: 400px;
+}
+
+.signup-select-menu {
+  max-height: 0;
+  position: relative;
+  z-index: 5;
+  -webkit-transition: max-height .4s ease-in;
+          transition: max-height .4s ease-in;
+}
+
+.singup-select__list-item {
+  position: relative;
+}
+
+.signup-select__item {
+  display: block;
+  padding: 1px;
+  padding-bottom: 0;
+  background: #787676;
+  color: #787676;
+}
+.signup-select__item:before {
+  content: '\25b8';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  left: -20px;
+  z-index: 5;
+  color: #09500c;
+  opacity: 0;
+}
+.signup-select__item:hover {
+  color: #787676;
+}
+.signup-select__item:hover::before {
+  opacity: 1;
+  -webkit-transition: opacity .2s;
+          transition: opacity .2s;
+}
+
+.signup-submit {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #09500c;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: #E9E5E3;
+}
+h2{
+padding:250px,400px,150px,400px;
+font-size:40px;
+color:blue;
+}
+.div{
+color:black;
+font-size:28px;
+}
+</style>
+</head>
+<body>
+  <header class="container">
+<div class="col-sm-4">
+  <img class="img-responsive" src="https://lh3.googleusercontent.com/qaZ502pG7X1FT6G_mbwx0I_-8cmO6ufMfAkRPe9M2DoI1xVMW_rljrT3QwJ5Zlb0sA=w300" class="img-rounded" alt="Cinque Terre" width="250" height="200"> 
+
+</div>
+
+<div class="col-sm-8">
+  <h1 class="text-center">Indira Gandhi Delhi Technical University For Women</h1>
+  <h3 class="text-center"><small>(Established by Government of Delhivide Act of 2012)</small></h3>
+  <h3 class="text-center"><small>(Formerly Indira Gandhi Institue of Technology)</small></h3>
+</header>
+<form  method="post" action="teacher_insert.php" class="signup">
+
+    <ul class="singup-list">
+     
+      <li class="signup-item">
+        <input type="text" placeholder="Name" class="signup-input" name="Name">
+      </li>
+      <li class="signup-item">
+        <input type="text" placeholder="Faculty id" class="signup-input" name="Facultyid">
+      </li>
+	    <li class="signup-item">
+        <input type="password" placeholder="Password" class="signup-input" name="Password">
+    </li>
+	   <li class="signup-item">
+        <input type="text" placeholder="Department" class="signup-input" name="Department">
+      </li>
+      <li class="signup-item">
+        <input type="email" placeholder="Email" class="signup-input" name="Email">
+      </li>
+	  <li class="signup-item">
+        <input type="text" placeholder="Mobile number" class="signup-input" name="Mobileno">
+      </li>
+	      <li class="signup-item">
+                                  <select class="signup-item" name="type" required>
+                                    <option>Permanent</option>
+                                    <option>Contract</option>
+                                    <option>Visiting</option>
+                                  </select>      
+        </li>
+      <li class="signup-item">
+        <input type="submit" class="signup-submit" name="submit_btn" value="SUBMIT">
+      </li>
+    </ul>
+  </form>
+
+</body>
+</html>

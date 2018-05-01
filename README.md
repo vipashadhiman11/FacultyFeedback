@@ -1,2 +1,2 @@
-# FacultyFeedback
-automation of faculty feedback system of our college
+# Faculty-Feedback-system
+This is to automate the process of feedback system in colleges
